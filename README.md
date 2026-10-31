@@ -3,6 +3,10 @@
 An Android app that rings an alarm **the moment your phone connects to Wi-Fi** —
 and only Wi-Fi. Mobile data is deliberately ignored.
 
+<p align="center">
+  <img src="docs/screenshot.png" alt="WakeWifi dashboard" width="320">
+</p>
+
 [![Latest release](https://img.shields.io/github/v/release/gorzkie-graffiti/wakewifi?label=latest%20release)](https://github.com/gorzkie-graffiti/wakewifi/releases/latest)
 
 Built with Kotlin, Jetpack Compose, and Material 3.
