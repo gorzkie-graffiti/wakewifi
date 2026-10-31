@@ -51,6 +51,21 @@ Install it on a connected device:
 adb install -r app/build/outputs/apk/debug/app-debug.apk
 ```
 
+## Signing
+
+Release builds are signed automatically when `keystore.properties` exists in the
+repository root:
+
+```bash
+cp keystore.properties.example keystore.properties
+# then fill in storeFile, storePassword, keyAlias, and keyPassword
+```
+
+`keystore.properties` and the keystore itself are gitignored. **Back up both** —
+if you lose the key, you cannot publish updates that install over existing
+installs. Without `keystore.properties`, `assembleRelease` produces an unsigned
+APK.
+
 ## Usage
 
 1. Open the app.
